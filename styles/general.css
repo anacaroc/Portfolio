@@ -1,0 +1,11 @@
+body {background: #e6e6e6; font-family: Lato; width: 100%; margin: 0px; height: 100%;}
+
+header{ background: #223843; color: #e6e6e6; width: 12%; height: 100vh; position: absolute; top: 0px;}
+
+header nav ul{width: 70%; margin: 0% ; padding: 15%}
+
+header nav ul li {list-style-type: none; margin: 0px 0px 20px 0px; border-bottom: 2px;}
+
+#generalcontent {width: 78%; float: right; padding: 5%;; background: chocolate}
+
+main {background: cornflowerblue}
