@@ -12,7 +12,7 @@ header {
     height: 100vh;
     position: fixed;
     top: 0px;
-    text-align: center
+    text-align: center;
 }
 
 header nav img{
@@ -43,37 +43,48 @@ header nav ul li a:hover {
 }
 #generalcontent {
     width: 78%;
-    float: right;
+    /* float: right; */
     padding: 5%;
-  
+    margin-left: 12%;
 }
 
 #description-Ana {
     background: url(../images/about-photo-ana.png) no-repeat 10%;
-    width: 50%;
-    height: 100%;
-    float: left;
+    /* width: 50%;
+    height: 100%; */
+    /* float: left; */
     padding: 16% 0% 16% 50%;
 }
 
+#gallery-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .gallery{
     display: block;
-    width: 30%;
     margin: 1%;
-    float: left;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0
+    /* float: left; */
 }
 
 #contact-space{
-background: url(../images/logo_contact.svg) no-repeat;
-background-position: 85% 20%;
-background-size: 10%;
-margin: 5% 20%;
-padding: 5%;
-border: 5px solid #f46036;
-border-radius: 6px;
-height: 300px;
+    background: url(../images/logo_contact.svg) no-repeat;
+    background-position: 85% 20%;
+    background-size: 10%;
+    margin: 5% 20%;
+    padding: 5%;
+    border: 5px solid #f46036;
+    border-radius: 6px;
+    height: 300px;
 }
 
+#contact-flex{
+    display: flex;
+    
+}
 #contact-space ul{
     list-style-type: none;
     margin: 0px
@@ -89,19 +100,20 @@ height: 300px;
 #contact-space h3 {
     font-size: 3em;
     color: #f46036;
-    text-align: center
+    text-align: center;
+    align-self: center;
 }
 
 #contact-social{
     width: 49%;
-    float: left;
+    /* float: left; */
     border-right: 3px dotted #f46036;
 }
 
 #contact-message{
     width: 40%;
     padding: 0% 5%;
-    float: left;
+    /* float: left; */
 }
 
 #contact-message input{
