@@ -63,11 +63,18 @@ header nav ul li a:hover {
 }
 .gallery{
     display: block;
-    margin: 1%;
-    width: 400px;
-    height: 400px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
     flex-shrink: 0
     /* float: left; */
+}
+#colagenoimg{
+    background: url(../images//ana-caicedo-colageno.jpg) no-repeat;
+    background-size: contain
+}
+.gallery img{
+    width: 100%;
 }
 
 #contact-space{
@@ -128,3 +135,17 @@ header nav ul li a:hover {
 #contact-message input[type=textarea]{
     height: 100px;
 }
+
+/* display divs */
+.display-hidden{
+    display: none;
+}
+
+.display-transition{
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
