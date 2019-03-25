@@ -48,7 +48,7 @@ header nav ul li a:hover {
 }
 
 #description {
-    background: url(/images/about-photo-ana.png) no-repeat 12%;
+    background: url(../images/about-photo-ana.png) no-repeat 12%;
     padding: 16% 0% 16% 45%;
     width: 500px;;
 }
@@ -85,7 +85,7 @@ header nav ul li a:hover {
 }
 
 #contact-space{
-    background: url(/images/logo_contact.svg) no-repeat;
+    background: url(../images/logo_contact.svg) no-repeat;
     background-position: 83% 80%;
     background-size: 20%;
     margin: 5% 20%;
