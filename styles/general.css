@@ -8,7 +8,7 @@ body {
 
 header {
     background: #223843;
-    width: 12%;
+    width: 180px;
     height: 100vh;
     position: fixed;
     top: 0px;
@@ -39,24 +39,35 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #f46036;
-    text-decoration: underline;
 }
 #generalcontent {
-    width: 78%;
-    padding: 5%;
-    margin-left: 12%;
+    padding: 2% 5%;;
+    margin-left: 180px;
+}
+#aboutme-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
 }
 
-#description {
+#aboutme-image{
     background: url(../images/about-photo-ana.png) no-repeat 12%;
-    padding: 16% 0% 16% 45%;
-    width: 500px;;
+    width: 400px;
+    height: 431px;
+
+}
+
+#aboutme-description {
+    width: 400px;
+    padding: 10px;
 }
 
 #gallery-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5px;
 }
 
 .gallery{
@@ -64,11 +75,26 @@ header nav ul li a:hover {
     margin: 5px;
     width: 300px;
     height: 300px;
-    flex-shrink: 0
+    flex-shrink: 0;
+ }
+
+.gallery >*{
+    width: 300px;
+    position: absolute;
 }
 
-.gallery img{
-    width: 100%;
+.gallery-description{
+    background: #e6e6e6da;
+    width: 270px;
+    height: 130px;
+    padding-top: 170px;
+    padding-left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery:hover > .gallery-description{
+    opacity: 1;
 }
 
 .reelcontainer{
@@ -89,7 +115,7 @@ header nav ul li a:hover {
     background-position: 83% 80%;
     background-size: 20%;
     margin: 5% 20%;
-    padding: 5%;
+    padding: 3%;
     border: 5px solid #f46036;
     border-radius: 6px;
     height: 300px;
@@ -122,7 +148,7 @@ header nav ul li a:hover {
 
 
 /* display divs */
-.display-hidden{
+#generalcontent > .display-hidden{
     display: none;
 }
 
