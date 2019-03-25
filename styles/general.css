@@ -43,17 +43,13 @@ header nav ul li a:hover {
 }
 #generalcontent {
     width: 78%;
-    /* float: right; */
     padding: 5%;
     margin-left: 12%;
 }
 
-#description-Ana {
-    background: url(../images/about-photo-ana.png) no-repeat 10%;
-    /* width: 50%;
-    height: 100%; */
-    /* float: left; */
-    padding: 16% 0% 16% 50%;
+#description {
+    background: url(/images/about-photo-ana.png) no-repeat 10%;
+    padding: 16% 0% 16% 40%;
 }
 
 #gallery-conteiner{
@@ -67,10 +63,9 @@ header nav ul li a:hover {
     width: 300px;
     height: 300px;
     flex-shrink: 0
-    /* float: left; */
 }
 #colagenoimg{
-    background: url(../images//ana-caicedo-colageno.jpg) no-repeat;
+    background: url(/images//ana-caicedo-colageno.jpg) no-repeat;
     background-size: contain
 }
 .gallery img{
@@ -78,20 +73,16 @@ header nav ul li a:hover {
 }
 
 #contact-space{
-    background: url(../images/logo_contact.svg) no-repeat;
-    background-position: 85% 20%;
-    background-size: 10%;
+    background: url(/images/logo_contact.svg) no-repeat;
+    background-position: 83% 80%;
+    background-size: 20%;
     margin: 5% 20%;
     padding: 5%;
     border: 5px solid #f46036;
     border-radius: 6px;
     height: 300px;
 }
-
-#contact-flex{
-    display: flex;
-    
-}
+ 
 #contact-space ul{
     list-style-type: none;
     margin: 0px
@@ -113,28 +104,10 @@ header nav ul li a:hover {
 
 #contact-social{
     width: 49%;
-    /* float: left; */
-    border-right: 3px dotted #f46036;
+    display: flex;
 }
 
-#contact-message{
-    width: 40%;
-    padding: 0% 5%;
-    /* float: left; */
-}
 
-#contact-message input{
-    width: 100%;
-    border: none;
-    border-bottom: #f46036 solid;
-    background-color: #e6e6e6;
-    padding: 2%;
-    margin-bottom: 1%;
-}
-
-#contact-message input[type=textarea]{
-    height: 100px;
-}
 
 /* display divs */
 .display-hidden{
