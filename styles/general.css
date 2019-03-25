@@ -48,15 +48,17 @@ header nav ul li a:hover {
 }
 
 #description {
-    background: url(/images/about-photo-ana.png) no-repeat 10%;
-    padding: 16% 0% 16% 40%;
+    background: url(/images/about-photo-ana.png) no-repeat 12%;
+    padding: 16% 0% 16% 45%;
+    width: 500px;;
 }
 
-#gallery-conteiner{
+#gallery-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .gallery{
     display: block;
     margin: 5px;
@@ -64,12 +66,22 @@ header nav ul li a:hover {
     height: 300px;
     flex-shrink: 0
 }
-#colagenoimg{
-    background: url(/images//ana-caicedo-colageno.jpg) no-repeat;
-    background-size: contain
-}
+
 .gallery img{
     width: 100%;
+}
+
+.reelcontainer{
+    padding: 42% 0 0 0;
+    position: relative;
+}
+
+#reelvimeo{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 #contact-space{
