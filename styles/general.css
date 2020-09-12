@@ -1,162 +1,111 @@
-body {
-    background: #e6e6e6;
-    font-family: Lato;
-    width: 100%;
-    margin: 0px;
-    height: 100%;
+/* colors 
+    dark blue (nav bg and general text) #2D3047
+    light blue(background and light text) #F3F3F7
+    links #0BB3A4
+    buttons and other #FF9B71
+
+*/
+
+html{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-header {
-    background: #223843;
-    width: 180px;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    text-align: center;
+*, *:before, *:after{
+    box-sizing: inherit;
+
 }
 
-header nav img{
-    width: 70%;
-    margin-top: 20%;
+img{
+    max-width: 100%;
 }
-header nav ul {
-    width: 70%;
-    margin: 0%;
-    padding: 15%;
-    text-align: left;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li {
-    list-style-type: none;
-    margin: 0px 0px 20px 0px;
-    border-bottom: 2px;
+header nav {
+    background-color: #2D3047;
+    color: #F3F3F7;
+    display: grid;
+    padding: 15px;
+    font-size: 1.3em;
 }
 
-header nav ul li a {
-    color: #e6e6e6;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    color: #f46036;
-}
-#generalcontent {
-    padding: 2% 5%;;
-    margin-left: 180px;
-}
-#aboutme-display{
+.menu-icon-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: #FF9B71;
 }
 
-#aboutme-image{
-    background: url(../images/about-photo-ana.png) no-repeat 12%;
-    width: 400px;
-    height: 431px;
-
+header nav img {
+    height: 30px;
 }
 
-#aboutme-description {
-    width: 400px;
-    padding: 10px;
-}
-
-#gallery-container{
+header nav ul{
+    list-style: none;
+    margin-top: -100px;
+    width: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5px;
-}
-
-.gallery{
-    display: block;
-    margin: 5px;
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
- }
-
-.gallery >*{
-    width: 300px;
-    position: absolute;
-}
-
-.gallery-description{
-    background: #e6e6e6da;
-    width: 270px;
-    height: 130px;
-    padding-top: 170px;
-    padding-left: 30px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.gallery:hover > .gallery-description{
-    opacity: 1;
-}
-
-.reelcontainer{
-    padding: 42% 0 0 0;
     position: relative;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
-#reelvimeo{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.menu-sections-open{
+    transition: opacity 1.4s, margin 0.2s ease-out, width 1s;
+    opacity: 100;
+    margin:0;
+    width: 100%;
 }
 
-#contact-space{
-    background: url(../images/logo_contact.svg) no-repeat;
-    background-position: 83% 80%;
-    background-size: 20%;
-    margin: 5% 20%;
-    padding: 3%;
-    border: 5px solid #f46036;
-    border-radius: 6px;
-    height: 300px;
-}
- 
-#contact-space ul{
-    list-style-type: none;
-    margin: 0px
+
+.menu-list-open{
+    right: 0px;
 }
 
-#contact-space li{
-    margin: 10px 0px;
-}
-#contact-space a{
-    color: #223843;
-    text-decoration: none;
-}
-#contact-space h3 {
-    font-size: 3em;
-    color: #f46036;
-    text-align: center;
-    align-self: center;
-}
-
-#contact-social{
-    width: 49%;
+header nav ul li{
     display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 25%;
+    height: 30px;
 }
 
+header nav ul a{
+    text-decoration: none;
+    color: #F3F3F7;
+}
 
+.menu-icon{
+    font-size: 1.2em;
+    position: relative;
+    z-index: 2;
+    top: .2em;
+    background-color: #2D3047;
+    width: 100%;
+}
 
-/* display divs */
-#generalcontent > .display-hidden{
+.menu-text{
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+    text-transform: uppercase;
+    color: #FF9B71;
+}
+
+.hidden{
+    background: #2D3047;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.social {
     display: none;
 }
-
-.display-transition{
-    animation-name: example;
-    animation-duration: 2s;
-}
-@keyframes example {
-    from {opacity:0;}
-    to {opacity:1;}
-  }

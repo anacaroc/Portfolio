@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ana Caicedo Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="images/logo.svg" alt="logo-Ana-Caicedo">
-            <ul>
-                <li><a href="#" id="aboutme-link">About Ana</a></li>
-                <li><a href="#" id="portfolio-link">Portfolio</a></li>
-                <li><a href="#" id="contact-link">Contact</a></li>
+            <div class="menu-icon-container">
+                <img src="images/logo.svg" alt="logo-Ana-Caicedo">
+                <button onclick="menuToggle()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="menu-sections"><!--class activated with js .menu-sections-open -->
+                <li><a href="#" id="aboutme-link">
+                        <i class="menu-icon fas fa-home"></i>
+                        <span class="menu-text">Home</span>
+                    </a></li>
+                <li><a href="#" id="aboutme-link">
+                        <i class="menu-icon fas fa-user-astronaut"></i>
+                        <span class="menu-text">About</span>
+                    </a></li>
+                <li><a href="#" id="portfolio-link">
+                        <i class="menu-icon fas fa-briefcase"></i>
+                        <span class="menu-text">Work</span>
+                    </a></li>
+                <li><a href="#" id="contact-link">
+                        <i class="menu-icon fas fa-envelope-open-text"></i>
+                        <span class="menu-text">Contact</span>
+                    </a></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-linkedin-in"></i>linkedin</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
+                <li><a href="#"><i class="fab fa-codepen"></i>Codepen</a></li>
+                <li><a href="#"><i class="fab fa-github"></i>github</a></li>
+                <li><a href="#"><i class="fab fa-behance"></i>behance</a></li><!-- in the future -->
+
+
             </ul>
         </nav>
     </header>
-    
+
     <div id="generalcontent">
         <main id="aboutme-display" class="display-transition">
             <div id="aboutme-image"></div>
             <div id="aboutme-description">
-                <h1>Hi, I'm Ana Caicedo</h1>
-                <p>I’m a designer, 3d modeler, audiovisual communicator, and now, I’m learning javascript, yass!</p>
-                <p>I just love learning and creating new narratives, I think it's better to let things tell their own story.</p>
-                <h4>Skills:</h4>
-                <p>HTML, CSS, Adobe illustrator, After effects, Cinema4d, Photoshop, Substance, Maya.</p>
+                <h1>Hi, </br>I'm Ana Caicedo</h1>
+                <p>developer / motion designer</p>
+                <p>I just love learning and creating new narratives, I think it's better to let things tell their own
+                    story.</p>
+                <!-- <h4>Skills:</h4>
+                <p>HTML, CSS, Adobe illustrator, After effects, Cinema4d, Photoshop, Substance, Maya.</p> -->
             </div>
+            <button>My work</button>
+            <button>Contact</button>
         </main>
-        <section id="portfolio-display" class="display-hidden display-transition">
+        <article>
+            <h2>About me</h2>
+            <p>
+                Hi again, looking for information about me?. Well basically I'm a designer who codes, craving for
+                creating engaging content and well done web experieces.
+            </p>
+            <h3>Skills</h3>
+            <p>
+                I started at 2014 with photoshop, now I don't know where it will end.
+            </p>
+            <div>
+                <span>HTML5</span>
+                <span>Js</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>After Effects</span>
+                <span>Premiere</span>
+            </div>
+        </article>
+        <!-- <section id="portfolio-display" class="display-hidden display-transition">
             <h2>Portfolio</h2>
             <div class="reelcontainer">
                 <iframe id="reelvimeo" src="https://player.vimeo.com/video/258456324?portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -88,23 +144,25 @@
         <section id="contact-display"  class="display-hidden display-transition">
             <h2>Contact</h2>
             <article id="contact-space">
-                <h3>Let's talk</h3>
+                <h3>Contact me</h3>
+                <p>There's a tone of ways to find me. Here are a few links where you can contact me.</p>
                 <div id="contact-social">
                     <ul id="social-media">
                         <li><a ><i class="fas fa-envelope-square"></i> caroacc.caicedo@gmail.com</a></li>
-                        <li><a href="https://www.behance.net/anacaicedo"><i class="fab fa-behance-square"></i> anacaicedo</a></li>
+                        <li><a href="https://www.behance.net/anacaicedo"><i class="fab fa-behance-square"></i> insagram- anc_lalala</a></li>
                         <li><a href="https://www.linkedin.com/in/ana-caicedo/"><i class="fab fa-linkedin"></i> ana-caicedo</a></li>
-                        <li><a href="https://vimeo.com/anacaicedo"><i class="fab fa-vimeo"></i> anacaicedo</a></li>
-                        <li><a ><i class="fas fa-map-marker-alt"></i> Medellín, Co</a></li>
+                        <li><a href="https://vimeo.com/anacaicedo"><i class="fab fa-vimeo"></i> twitter anac_lalala</a></li>
+                        <li><a ><i class="fas fa-map-marker-alt"></i> Medellín, Co(Currently)</a></li>
                     </ul>
                 </div>
 
             </article>
-        </section>
+        </section> -->
 
-        
+
     </div>
-<script src="scripts/script.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
+
 </html>
