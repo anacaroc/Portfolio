@@ -68,3 +68,40 @@ function iconTextChange() {
   }
 }
 iconTextChange();
+
+//background with p5.js
+let viewportWidth = window.innerWidth;
+let viewportHeight = window.innerHeight;
+
+function setup() {
+  let cnv = createCanvas(viewportWidth, viewportHeight);
+  cnv.id("mycanvas")
+  noStroke();
+  background(245);
+}
+
+function draw() {
+  
+  //pattern properties
+  background(245, 245, 245, 8);
+  fill(11, 179, 164);
+  var circleDiameter = 2;
+  var circleSpacing = circleDiameter + 45;
+  var containerWidth = width/circleSpacing;
+  var containerHeight = height/circleSpacing;
+  
+  for(var i = 0; i < containerWidth; i++){
+    for(var j = 0; j < containerHeight; j++){
+      circle(i*circleSpacing + circleDiameter/2, j*circleSpacing + circleDiameter/2, circleDiameter);
+    }
+  }
+  
+  //mouse circle properties
+  fill(255, 155,113, 8);
+  var mouseCircleDiameter = 50;
+  var positionX = mouseX;
+  var positionY = mouseY;
+  
+  circle(positionX, positionY, mouseCircleDiameter/2)
+  circle(positionX+6, positionY+3, mouseCircleDiameter)
+}
