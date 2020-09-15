@@ -25,40 +25,38 @@ body {
   padding: 0;
 }
 
-#mycanvas{
+#mycanvas {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -10;
-  background: pink;
 }
 
-button{
+.general-button {
   font-family: inherit;
   font-weight: bold;
   font-size: 1em;
-  border: 2px solid #0BB3A4;
+  border: 2px solid #0bb3a4;
   border-radius: 5px;
   padding: 0.5em;
-  width: 150px;
-  transition:  0.1s ease;
+  width: 100px;
+  transition: 0.4s ease;
 }
 button:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
-.principal-button{
-  background-color: #0BB3A4;
+.principal-button {
+  background-color: #0bb3a4;
 }
 
 .principal-button:hover {
-  background-color: #FF9B71;
-  border-color: #FF9B71;
+  background-color: #ff9b71;
+  border-color: #ff9b71;
 }
-.secondary-button:hover{
-  border-color: #FF9B71;
+.secondary-button:hover {
+  border-color: #ff9b71;
 }
-
 
 header nav {
   background-color: #2d3047;
@@ -128,10 +126,37 @@ header nav ul li {
   width: 25%;
   height: 30px;
 }
-
-#general-content{
+.general-content {
   padding: 50px 25px;
+  min-height: 100vh;
 }
+
+.contact-social{
+  background-color: #FF9B71;
+  border-radius: 15px;
+  display: grid;
+  grid-template: repeat(3, 80px)/ repeat(4,25%);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.contact-social :nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contact-social :nth-child(6){
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contact-social .contact-big-icon{
+  font-size: 1.8em;;
+}
+.contact-social :link, .contact-social :visited{
+  color: #6d4331
+}
+
 
 @media screen and (max-width: 850px) {
   header nav ul {
@@ -200,8 +225,12 @@ header nav ul li {
   header nav img {
     height: 40px;
   }
-  #general-content{
+  .general-content {
     padding: 20px;
     margin-left: 70px;
+  }
+
+  .contact-social{
+    margin: 20px 0;
   }
 }
