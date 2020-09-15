@@ -128,7 +128,6 @@ header nav ul li {
 }
 .general-content {
   padding: 50px 25px;
-  min-height: 100vh;
 }
 
 .contact-social{
@@ -157,6 +156,28 @@ header nav ul li {
   color: #6d4331
 }
 
+.portfolio-section{
+  background-color: #4d3024;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.portfolio-section > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+.portfolio-section::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.portfolio-box{
+  background-color: #ff9b71;
+}
 
 @media screen and (max-width: 850px) {
   header nav ul {
@@ -232,5 +253,10 @@ header nav ul li {
 
   .contact-social{
     margin: 20px 0;
+  }
+  .portfolio-section{
+    padding-left: 70px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
   }
 }
