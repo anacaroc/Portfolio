@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="styles/general.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -31,29 +31,29 @@
         <ul class="menu-sections">
           <!--class activated with js .menu-sections-open -->
           <li>
-            <a href="#" id="aboutme-link">
+            <a href="#home" id="aboutme-link">
               <i class="menu-icon fas fa-home"></i>
               <span class="menu-text">Home</span>
             </a>
           </li>
           <li>
-            <a href="#" id="aboutme-link">
+            <a href="#about" id="aboutme-link">
               <i class="menu-icon fas fa-user-astronaut"></i>
               <span class="menu-text">About</span>
             </a>
           </li>
           <li>
-            <a href="#" id="portfolio-link">
+            <a href="#portfolio" id="portfolio-link">
               <i class="menu-icon fas fa-briefcase"></i>
               <span class="menu-text">Work</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#" id="contact-link">
               <i class="menu-icon fas fa-envelope-open-text"></i>
               <span class="menu-text">Contact</span>
             </a>
-          </li>
+          </li> -->
         </ul>
 
         <ul class="menu-social">
@@ -73,16 +73,20 @@
       </nav>
     </header>
 
-    <main id="about-display" class="display-transition general-content">
+    <main id="home" class="display-transition general-content">
             <div id="about-description">
-                <h1>Hello there! </br>I'm Ana Caicedo</h1>
+                <h1>Hello there! </br>
+                  <span class="lalala-title">
+                    I'm Ana <br> Caicedo
+                  </span>
+                </h1>
                 <p>developer / motion designer</p>
                 <p>I just love learning and creating new narratives, I think it's better to let things tell their own story.</p>
-                <button class="general-button principal-button">My work</button>
-                <button class="general-button secondary-button">Contact</button>
+                <a href="#portfolio" class="general-button principal-button" >My work</a>
+                <a href="#about" class="general-button secondary-button">Contact</a>
             </div>
         </main>
-    <article class="general-content">
+    <article id="about" class="general-content">
             <h2>About me</h2>
             <p>
                 Hi again, looking for information about me?. Well basically I'm a designer who codes, craving for
@@ -103,17 +107,47 @@
                 <span>Premiere</span>
             </div>
         </article>
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="portfolio">
         <div class="portfolio-box">
+          <a href="https://www.behance.net/gallery/104367159/Memories-of-a-journey" target="_blank">
+            <img src="images/ana-caicedo-bitacora-de-viaje.png" alt="">
+          </a>
         </div>
         <div class="portfolio-box">
+          <a href="https://www.youtube.com/watch?v=Ptng1RggNkQ" target="_blank">
+            <img src="images/ana-caicedo-morist.jpg" alt="">
+          </a>
         </div>        
         <div class="portfolio-box">
+          <img src="images/ana-caicedo-molecum-web.jpg" alt="">
         </div>        
         <div class="portfolio-box">
+          <a href="https://youtu.be/GTpB1CG26k4" target="_blank">
+            <img src="images/ana-caicedo-colageno.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-box">
+          <a href="https://youtu.be/GciRMLVWc9g" target="_blank">
+            <img src="images/ana-caicedo-molecum-video.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-box">
+          <a href="https://vimeo.com/258456324" target="_blank">
+            <img src="images/ana-caicedo-old-reel.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-box">
+          <a href="https://www.behance.net/gallery/76322889/Modeling-and-texturing" target="_blank">
+            <img src="images/ana-caicedo-plain-apt.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-box">
+          <a href="https://youtu.be/DnKAQHGoPqk" target="_blank">
+            <img src="images/ana-caicedo-colageno-caja.jpg" alt="">
+          </a>
         </div>
         </section>
-    <section
+    <!-- <section
       id="contact-display"
       class="general-content display-hidden display-transition"
     >
@@ -157,7 +191,7 @@
               </a>
         </div>
       </article>
-    </section>
+    </section> -->
 
     <script src="scripts/script.js"></script>
     <script src="scripts/p5.min.js"></script>
