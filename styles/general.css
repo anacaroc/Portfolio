@@ -33,6 +33,16 @@ body {
   z-index: -10;
 }
 
+
+.background{
+  background: url('/images/ana-caicedo-bg-mov.svg') no-repeat top;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+}
+
 .general-button {
   font-family: inherit;
   font-weight: bold;
@@ -272,12 +282,19 @@ header nav ul li {
 
   }
 
-  .portfolio-box img{
-  }
   .portfolio-box img:hover{
     transition: 0.1s ease-in-out;
     opacity: 0.9;
     transform: scale(0.9);
   }
+  
+.background{
+  background: url('/images/ana-caicedo-bg-pc.svg') no-repeat right;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+}
   
 }
