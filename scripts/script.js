@@ -1,45 +1,46 @@
-// var aboutmeDiv = document.getElementById("aboutme-display");
-// var portfolioDiv = document.getElementById("portfolio-display");
-// var contactDiv = document.getElementById("contact-display");
-// var displayClass = "display-hidden";
-// var aboutmeLink = document.getElementById("aboutme-link");
-// var portfolioLink = document.getElementById("portfolio-link");
-// var contactLink = document.getElementById("contact-link");
+var homeDiv = document.querySelector('#home');
+var aboutDiv = document.querySelector('#about');
+var portfolioDiv = document.querySelector('#portfolio');
+var homeLink = document.querySelector('#home-link');
+var aboutLink = document.querySelector('#about-link');
+var portfolioLink = document.querySelector('#portfolio-link');
 
-// function hideAll() {
-//   aboutmeDiv.classList.add(displayClass);
-//   portfolioDiv.classList.add(displayClass);
-//   contactDiv.classList.add(displayClass);
-// }
+function hideAll() {
+  homeDiv.classList.add('display-hidden');
+  aboutDiv.classList.add('display-hidden');
+  portfolioDiv.classList.add('display-hidden');
+}
 
-// function removeHide(option) {
-//   if (option === "aboutme") {
-//     aboutmeDiv.classList.remove(displayClass);
-//   } else if (option === "portfolio") {
-//     portfolioDiv.classList.remove(displayClass);
-//   } else if (option === "contact") {
-//     contactDiv.classList.remove(displayClass);
-//   }
-// }
+function removeHide(option) {
+  if (option === "about") {
+    aboutDiv.classList.remove('display-hidden');
+  } else if (option === "portfolio") {
+    portfolioDiv.classList.remove('display-hidden');
+  } else if ( option === "home") {
+    homeDiv.classList.remove('display-hidden')
+  }
+}
 
-// var selectedOption;
-// function showOne(option) {
-//   if (option !== selectedOption) {
-//     selectedOption = option;
-//     hideAll();
-//     removeHide(option);
-//   }
-// }
+var selectedOption;
+function showOne(option) {
+  if (option !== selectedOption) {
+    selectedOption = option;
+    hideAll();
+    removeHide(option);
+  }
+}
 
-// aboutmeLink.onclick = function () {
-//   showOne("aboutme");
-// };
-// portfolioLink.onclick = function () {
-//   showOne("portfolio");
-// };
-// contactLink.onclick = function () {
-//   showOne("contact");
-// };
+aboutLink.onclick = function () {
+  showOne("about");
+};
+portfolioLink.onclick = function () {
+  showOne("portfolio");
+};
+
+homeLink.onclick = function () {
+  showOne("home");
+};
+
 
 //MENU toggle with menu-toggle-button for mobile
 

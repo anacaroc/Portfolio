@@ -41,6 +41,8 @@ body {
   height: 100vh;
   z-index: -20;
   position: absolute;
+  background-origin: content-box;
+  padding-top: 40px;
 }
 
 .general-button {
@@ -56,6 +58,8 @@ body {
 }
 .general-button:active {
   transform: scale(0.8);
+  color: #2d3047;
+
 }
 
 .general-button:visited{
@@ -65,6 +69,10 @@ body {
 
 .principal-button {
   background-color: #0bb3a4;
+}
+
+.principal-button:active {
+  background-color: #f3f3f7;
 }
 
 .principal-button:hover {
@@ -145,6 +153,39 @@ header nav ul li {
 }
 .general-content {
   padding: 50px 25px;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#home{
+  height: 100vh;
+  max-width: 800px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10%;
+  padding-bottom: 80px;
+
+}
+
+.home-container h1 span{
+  display: block;
+}
+
+.home-container h1 :nth-child(2) {
+  font-size: 40px;
+}
+.home-container .general-button {
+  display: inline-flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#about{
+  border-top: 3px #9bdad4 dotted;
+  padding: 30px 10%;
 }
 
 .contact-social{
@@ -212,6 +253,7 @@ header nav ul li {
     margin: 0;
     width: 100%;
   }
+
 }
 
 @media screen and (min-width: 526px) {
@@ -271,6 +313,11 @@ header nav ul li {
   .general-content {
     padding: 20px;
     margin-left: 70px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
   }
 
   .contact-social{
@@ -291,10 +338,48 @@ header nav ul li {
 .background{
   background: url('/images/ana-caicedo-bg-pc.svg') no-repeat right;
   background-size: cover;
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
   z-index: -20;
   position: absolute;
 }
-  
+
+#home{
+  width: 55%;
+  align-items: center;
+  max-width: 800px;
+  padding-left: 10%;
+  padding-bottom: 80px;
+}
+
+.home-container h1 :nth-child(2) {
+  font-size: 50px;
+}
+
+.home-container .general-button {
+  display: inline-flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+#home.display-hidden{
+  display: none;
+}
+
+#about.display-hidden{
+  display: none;
+}
+
+#portfolio.display-hidden{
+  display: none;
+}
+
+#about{
+  border-top: none;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  max-width: 50%;
+}
+
 }
