@@ -1,0 +1,385 @@
+/* colors 
+    dark blue (nav bg and general text) #2D3047
+    light blue(background and light text) #F3F3F7
+    links #0BB3A4
+    buttons and other #FF9B71
+
+*/
+
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mycanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+
+.background{
+  background: url('/images/ana-caicedo-bg-mov.svg') no-repeat top;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+  background-origin: content-box;
+  padding-top: 40px;
+}
+
+.general-button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid #0bb3a4;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100px;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+.general-button:active {
+  transform: scale(0.8);
+  color: #2d3047;
+
+}
+
+.general-button:visited{
+  text-decoration-line: none;
+  color: #2d3047;
+}
+
+.principal-button {
+  background-color: #0bb3a4;
+}
+
+.principal-button:active {
+  background-color: #f3f3f7;
+}
+
+.principal-button:hover {
+  background-color: #ff9b71;
+  border-color: #ff9b71;
+}
+.secondary-button:hover {
+  border-color: #ff9b71;
+}
+
+header nav {
+  background-color: #2d3047;
+  color: #f3f3f7;
+  display: grid;
+  padding: 15px;
+  font-size: 1.3em;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+.menu-icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1.2em;
+  color: #ff9b71;
+}
+
+header nav img {
+  height: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #f3f3f7;
+}
+
+.menu-icon {
+  font-size: 1.2em;
+  position: relative;
+  z-index: 2;
+  top: 0.2em;
+  background-color: #2d3047;
+  width: 100%;
+}
+
+.menu-text {
+  font-size: 15px;
+  position: relative;
+  top: -20px;
+  text-transform: uppercase;
+  color: #ff9b71;
+}
+
+.hidden {
+  background: #2d3047;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+.menu-social {
+  display: none;
+}
+header nav ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 33%;
+  height: 30px;
+}
+.general-content {
+  padding: 50px 25px;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#home{
+  height: 100vh;
+  max-width: 800px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10%;
+  padding-bottom: 80px;
+
+}
+
+.home-container h1 span{
+  display: block;
+}
+
+.home-container h1 :nth-child(2) {
+  font-size: 40px;
+}
+.home-container .general-button {
+  display: inline-flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#about{
+  border-top: 3px #9bdad4 dotted;
+  padding: 30px 10%;
+}
+
+.contact-social{
+  background-color: #FF9B71;
+  border-radius: 15px;
+  display: grid;
+  grid-template: repeat(3, 80px)/ repeat(4,25%);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.contact-social :nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contact-social :nth-child(6){
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contact-social .contact-big-icon{
+  font-size: 1.8em;;
+}
+.contact-social :link, .contact-social :visited{
+  color: #6d4331
+}
+
+.portfolio-section{
+  /* background-color: #4d3024; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+/* .portfolio-section > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+} */
+/* .portfolio-section::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+} */
+/* 
+.portfolio-box{
+  background-color: #ff9b71;
+} */
+
+@media screen and (max-width: 850px) {
+  header nav ul {
+    margin-top: -100px;
+    width: 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .menu-sections-open {
+    transition: opacity 1.4s, margin 0.2s ease-out, width 1s;
+    opacity: 100;
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 526px) {
+  .portfolio-section {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 851px) {
+  header nav {
+    width: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-sections {
+    margin-top: 60px;
+  }
+  .menu-social {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-size: 0.9em;
+  }
+
+  .menu-social a i {
+    padding: 5px 0;
+  }
+
+  .menu-social a:hover {
+    color: #0bb3a4;
+  }
+
+  .menu-icon-container {
+    width: 70px;
+    flex-direction: column;
+    margin-left: -10px;
+  }
+
+  header nav img {
+    height: 40px;
+  }
+  .general-content {
+    padding: 20px;
+    margin-left: 70px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  }
+
+  .contact-social{
+    margin: 20px 0;
+  }
+  .portfolio-section{
+    padding-left: 70px;
+    background-color: #ff9b71;
+
+  }
+
+  .portfolio-box img:hover{
+    transition: 0.1s ease-in-out;
+    opacity: 0.9;
+    transform: scale(0.9);
+  }
+  
+.background{
+  background: url('/images/ana-caicedo-bg-pc.svg') no-repeat right;
+  background-size: cover;
+  width: 95vw;
+  height: 100vh;
+  z-index: -20;
+  position: absolute;
+}
+
+#home{
+  width: 55%;
+  align-items: center;
+  max-width: 800px;
+  padding-left: 10%;
+  padding-bottom: 80px;
+}
+
+.home-container h1 :nth-child(2) {
+  font-size: 50px;
+}
+
+.home-container .general-button {
+  display: inline-flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+#home.display-hidden{
+  display: none;
+}
+
+#about.display-hidden{
+  display: none;
+}
+
+#portfolio.display-hidden{
+  display: none;
+}
+
+#about{
+  border-top: none;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  max-width: 50%;
+}
+
+}
