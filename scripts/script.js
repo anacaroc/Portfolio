@@ -51,22 +51,24 @@ function menuToggle(){
     console.log(menuToggleList);
 }
 
-
-//MENU text appears when holding icon: on hover display menu icon none and display menu text
-
-var menuIcon = document.querySelectorAll(".menu-icon");
-
-function iconTextChange() {
-  for (i = 0; i < menuIcon.length; i++) {
-    function mouseOn() {
-      this.classList.add("hidden");
+function removeHide(option){
+    if (option === "aboutme") {
+        aboutmeDiv.classList.remove(displayClass);
+    } else if (option === "portfolio"){
+        portfolioDiv.classList.remove(displayClass);
+        
+    } else if (option === "contact"){
+        contactDiv.classList.remove(displayClass)
     }
-    function mouseOut() {
-      this.classList.remove("hidden");
+}
+
+var selectedOption
+function showOne(option){
+    if(option !== selectedOption){
+        selectedOption = option
+        hideAll();
+        removeHide(option);
     }
-    menuIcon[i].addEventListener("mouseenter", mouseOn, false);
-    menuIcon[i].addEventListener("mouseleave", mouseOut, false);
-  }
 }
 iconTextChange();
 
