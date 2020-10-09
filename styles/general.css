@@ -35,7 +35,7 @@ body {
 
 
 .background{
-  background: url('https://github.com/anac-lalala/Portfolio/blob/master/images/ana-caicedo-bg-mov.svg') no-repeat top;
+  background: url('https://raw.githubusercontent.com/anac-lalala/Portfolio/master/images/ana-caicedo-bg-mov.svg') no-repeat top;
   background-size: cover;
   width: 100vw;
   height: 100vh;
