@@ -336,7 +336,7 @@ header nav ul li {
   }
   
 .background{
-  background: url('./images/ana-caicedo-bg-pc.svg') no-repeat right;
+  background: url('https://raw.githubusercontent.com/anac-lalala/Portfolio/master/images/ana-caicedo-bg-pc.svg') no-repeat right;
   background-size: cover;
   width: 95vw;
   height: 100vh;
