@@ -35,7 +35,7 @@ body {
 
 
 .background{
-  background: url('/images/ana-caicedo-bg-mov.svg') no-repeat top;
+  background: url('https://github.com/anac-lalala/Portfolio/blob/master/images/ana-caicedo-bg-mov.svg') no-repeat top;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -336,7 +336,7 @@ header nav ul li {
   }
   
 .background{
-  background: url('/images/ana-caicedo-bg-pc.svg') no-repeat right;
+  background: url('./images/ana-caicedo-bg-pc.svg') no-repeat right;
   background-size: cover;
   width: 95vw;
   height: 100vh;
